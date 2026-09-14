@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grey's Anatomy | Galería</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="accent">GREY'S</span> ANATOMY</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre la serie</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="temporadas.html">Temporadas<br>y episodios</a></li>
+        <li><a href="spin-offs.html">Spin-offs</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li class="active"><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="nav-search" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="section-title">
+      <span class="bar"></span>
+      <h2>Galería</h2>
+      <span class="pulse">
+        <svg width="130" height="32" viewBox="0 0 130 32" fill="none" stroke="#9f1b17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="0,16 22,16 29,3 36,29 43,16 130,16"/></svg>
+      </span>
+    </div>
+
+    <div class="gallery-grid">
+      <img class="g-tall" src="img/galeria-1.jpg"  alt="Galería 1" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+      <img class="g-tall" src="img/galeria-2.jpg"  alt="Galería 2" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-3.jpg"  alt="Galería 3" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+      <img class="g-tall" src="img/galeria-4.jpg"  alt="Galería 4" style="object-position: left 20%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-5.jpg"  alt="Galería 5" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-6.jpg"  alt="Galería 6" style="object-position: center 19.8%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-7.jpg"  alt="Galería 7" onclick="abrirLightbox(this)">
+      <img class="g-tall" src="img/galeria-8.jpg"  alt="Galería 8" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-9.jpg"  alt="Galería 9" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-10.jpg" alt="Galería 10" onclick="abrirLightbox(this)">
+      <img class="g-tall" src="img/galeria-11.jpg" alt="Galería 11" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-12.jpg" alt="Galería 12" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-13.jpg" alt="Galería 13" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-14.jpg" alt="Galería 14" onclick="abrirLightbox(this)">
+      <img class="g-tall" src="img/galeria-15.jpg" alt="Galería 15" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-16.jpg" alt="Galería 16" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-17.jpg" alt="Galería 17" style="object-position: center 29%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-18.jpg" alt="Galería 18" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-19.jpg" alt="Galería 19" style="object-position: center 40%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-20.jpg" alt="Galería 20" style="object-position: center 2%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-21.jpg" alt="Galería 21" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+      <img               src="img/galeria-22.jpg" alt="Galería 22" style="object-position: center 20%;" onclick="abrirLightbox(this)">
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="accent">GREY'S</span> ANATOMY</a>
+    <div class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <span class="sep"></span>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="cerrarLightbox(event)">
+  <span class="cerrar">&times;</span>
+  <span class="flecha flecha-izq" onclick="event.stopPropagation(); cambiarImagen(-1)">&#10094;</span>
+  <img class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()">
+  <span class="flecha flecha-der" onclick="event.stopPropagation(); cambiarImagen(1)">&#10095;</span>
+</div>
+
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="cerrarLightbox(event)">
+  <span class="cerrar">&times;</span>
+  <span class="flecha flecha-izq" onclick="event.stopPropagation(); cambiarImagen(-1)">&#10094;</span>
+  <img class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()">
+  <span class="flecha flecha-der" onclick="event.stopPropagation(); cambiarImagen(1)">&#10095;</span>
+</div>
+
+<script>
+  const imagenes = document.querySelectorAll('.gallery-grid img');
+  let indiceActual = 0;
+
+  function abrirLightbox(img) {
+    const imgs = Array.from(imagenes);
+    indiceActual = imgs.indexOf(img);
+    mostrarImagen();
+    document.getElementById('lightbox').classList.add('activo');
+  }
+
+  function mostrarImagen() {
+    document.getElementById('lightbox-img').src = imagenes[indiceActual].src;
+  }
+
+  function cambiarImagen(direccion) {
+    indiceActual = (indiceActual + direccion + imagenes.length) % imagenes.length;
+    mostrarImagen();
+  }
+
+  function cerrarLightbox() {
+    document.getElementById('lightbox').classList.remove('activo');
+  }
+
+  document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox.classList.contains('activo')) return;
+    if (e.key === 'ArrowRight') cambiarImagen(1);
+    if (e.key === 'ArrowLeft') cambiarImagen(-1);
+    if (e.key === 'Escape') cerrarLightbox();
+  });
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
